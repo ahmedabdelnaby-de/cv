@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-epiloguefamily: "Epilogue", sans-serif;
+    --color:#2D2D2D;
+        --bg-color:#ffffff;
+}
+section{
+    width: 100%;
+    height:100%;
+    padding:88px 99.5px;
+    @media (max-width:375px) {
+        width: 375px;
+        padding: 40px 30px;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 56.3px;
+        /* justify-content: space-between; */
+        @media (max-width:375px) {
+            width: 315px;
+                }
+            .card{
+            width: 315px;
+            height: 407px;
+            /* background-color: blue; */
+            background-color: var(--bg-color);
+            /* margin-bottom: 60px; */
+
+            .img-pro{
+                width: 315px;
+                height: 315px;
+                cursor: not-allowed; 
+            }
+            h2{
+                font-family:var(--font-epiloguefamily) ;
+                font-size:20px ;
+                font-weight: 600;
+                line-height: 30px;
+                margin-top: 25px;
+                color: var(--color);
+            }
+            p{
+                font-family:var(--font-epiloguefamily) ;
+                font-size:17px ;
+                font-weight: 400;
+                margin-top: 10px;
+                color: var(--color);                  padding-top: 3px; 
+                line-height: 27px;
+            }
+        }
+    }
+}

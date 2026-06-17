@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-epiloguefamily: "Epilogue", sans-serif;
+    --color:#2D2D2D;
+    --bg-color:#ffffff;
+}
+section{
+    height: 624px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 125px;
+    
+    @media (max-width: 375px) {
+        width: 329.9px;
+        height: 100%;
+        /* padding:40px; */
+        margin: 49px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        /* background-color: aquamarine; */
+    }
+    .card{
+        width: 249.9px;
+        height: 328px;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 56px;
+        @media (max-width: 375px) {
+            width: 249.9px;
+            height: 289px;
+            margin-left: 10px;
+            /* background-color: bisque; */;
+            gap: 24px;
+        }
+        .img-seriver{
+            width: 130px;
+        }
+        .text{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 19px;
+            @media (max-width: 375px) {
+                gap: 12px;
+            }
+            p{
+                font-family: var(--font-epiloguefamily);
+                font-size: 16px;
+                color: var(--color);
+                font-weight: 400;
+                line-height: 27px;
+
+            }
+            h2{
+                font-family: var(--font-epiloguefamily);
+                font-size: 27px;
+                color: var(--color);
+                font-weight: 600;
+                /* margin-bottom: 19px; */
+                /* background-color: beige; */
+                padding-top: 6px;
+                line-height: 42px;
+        }
+}
+}
+}
